@@ -1,0 +1,26 @@
+.match-detail{
+     margin-top: 10px;;
+     margin-bottom: 10px;;
+
+    .match-date{
+        margin-top: 10px;
+    }
+   
+}
+
+
+.green{
+    background-color: darkgreen;
+    display: grid;
+    grid-template-rows: 100px;
+}
+.red{
+    background-color: darkred;
+    display: grid;
+    grid-template-rows: 100px;
+}
+.yellow{
+    background-color: darkgray;
+    display: grid;
+    grid-template-rows: 100px;
+}

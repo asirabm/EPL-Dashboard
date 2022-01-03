@@ -1,0 +1,9 @@
+id,Season,DateTime,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR
+  @Bean
+  public JdbcBatchItemWriter<Match> writer(DataSource dataSource) {
+    return new JdbcBatchItemWriterBuilder<Match>()
+      .itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())
+      .sql("INSERT INTO match (id,Season,DateTime,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTAG,HTR,Referee)"+ "VALUES (:id,:Season,:DateTime,:HomeTeam,:AwayTeam,:FTHG,:FTAG,:FTR,:HTAG,:HTR,:Referee)")
+      .dataSource(dataSource)
+      .build();
+  }

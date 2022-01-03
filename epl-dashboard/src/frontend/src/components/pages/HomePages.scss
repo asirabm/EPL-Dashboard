@@ -1,0 +1,21 @@
+
+.HomePage{
+    margin: 20px;
+
+
+    .team-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+    .team{
+        height: 50px;
+        text-align: center;
+        border: 1px solid white;
+        padding: 20px;
+    }
+    
+
+
+}
+
